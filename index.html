@@ -628,7 +628,7 @@ const SCHOOL_EN = 'INSU SCHOOL';            // 첫 화면 영문 표기 (예: 'G
 const GUEST_CLS = [];   // 시즌 2는 기본으로 끔. 예: ['1']
 const SCHOOL_STORY = '';  // 첫 화면 이야기(학교 이름 풀이). 비워 둬도 된다.
 /* ④ 관측 장소 — 하늘 시계·3D 지구에 나오는 이름. 위도·경도는 아래 OBS_LAT, OBS_LON (기본: 강북) */
-const PLACE = '우리 학교';
+const PLACE = '인수중학교';
 const SCHOOL_TAG = SCHOOL && SCHOOL!=='우리' ? SCHOOL+' ' : '';   // 보너스 미션 제목 앞에 붙는 학교 이름
 
 /* ───────── 서버 통신 (힘탐정과 같은 방식: 읽기 JSONP, 쓰기 POST) ───────── */
@@ -880,7 +880,7 @@ const D2R=Math.PI/180, R2D=180/Math.PI;
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const wrap360=a=>((a%360)+360)%360;
 const wrap180=a=>{a=wrap360(a);return a>180?a-360:a;};
-const OBS_LAT=37.36, OBS_LON=126.93;      /* 군포 */
+const OBS_LAT=37.64379, OBS_LON=127.01002;      /* 서울 */
 const EVENT_DAY={y:2026,m:11,d:23};         /* 고천 천체관측의 밤 */
 
 /* ── 정적 그림 ─────────────────────────────────────────── */
